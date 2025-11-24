@@ -1,0 +1,86 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 500px;
+  height: 800px;
+  overflow: hidden;
+  margin: auto;
+  padding: 10px;
+  background-color: rgb(238, 238, 12);
+}
+.header {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.header h1 {
+  text-align: center;
+  color: red;
+  font-size: 40px;
+}
+.header img {
+  width: 150px;
+}
+.header ul {
+  display: flex;
+  gap: 10px;
+  /* background-color: aliceblue; */
+}
+.header ul li {
+  list-style: none;
+  background-color: rgb(135, 133, 133);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.header ul li:active {
+  background-color: blue;
+}
+.header ul li:nth-child(1) {
+  background-color: blue;
+}
+.conten {
+  width: 100%;
+  background-color: white;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 15px;
+  border-radius: 15px;
+}
+.conten .box_item {
+  background-color: rgba(129, 129, 129, 0.337);
+  height: 154px;
+  width: 100%;
+  border: 2px solid rgb(212, 210, 210);
+}
+.box_item .food_menu {
+  height: 110px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: tomato; */
+}
+.box_item .food_menu img {
+  width: 120px;
+  object-fit: cover;
+}
+.box_item .price {
+  height: 40px;
+  width: 100%;
+  background-color: rgb(238, 238, 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.price p {
+  font-size: 20px;
+}
